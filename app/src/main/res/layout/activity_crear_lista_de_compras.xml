@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearListaDeCompras">
+
+    <TextView
+        android:id="@+id/CrearListaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/crear_lista_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/nombreCompraEditText"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/compra_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CrearListaTextView" />
+
+    <EditText
+        android:id="@+id/fechaCompraEditText"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text="@string/fecha_compra_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreCompraEditText" />
+    <EditText
+        android:id="@+id/periodoCompraEditText"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text="@string/fecha_compra_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fechaCompraEditText" />
+
+    <Button
+        android:id="@+id/enviarCompraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/enviar_Button"
+        app:layout_constraintEnd_toEndOf="@+id/periodoCompraEditText"
+        app:layout_constraintTop_toBottomOf="@+id/periodoCompraEditText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

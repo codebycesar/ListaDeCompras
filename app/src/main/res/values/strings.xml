@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ListaDeCompras</string>
+    <string name="wellcome_text_view">Bienvendo a Listapp</string>
+    <string name="hint_user_Edit_Text">Ingrese su nombre</string>
+    <string name="enviar_Button">Enviar</string>
+    <string name="crear_lista_text_view">Crea tu lista de compras</string>
+    <string name="compra_edit_text">Nombre lista de compras</string>
+    <string name="fecha_compra_edit_text">Fecha de compra</string>
+    <string name="enviar_compra_button" />
+</resources>
